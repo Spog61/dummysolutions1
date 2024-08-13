@@ -1,0 +1,99 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr552_employees",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr552_employee",
+    "Name": "Employees",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "cr552_CarID": "Car ID",
+      "cr552_department": "Department",
+      "cr552_employee_Annotations": "Notes",
+      "cr552_employee_AsyncOperations": "System Jobs",
+      "cr552_employee_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr552_employee_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr552_employee_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr552_employee_ProcessSession": "Process Sessions",
+      "cr552_employee_SyncErrors": "Sync Errors",
+      "cr552_employeeid": "Employee",
+      "cr552_employeeid1": "Employee ID",
+      "cr552_employeename": "Employee Name",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Employees",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Employees (Views)",
+    "Name": "_cr552_employee_views",
+    "RelatedEntityName": "Employees",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1445ca13-2ea4-4cd9-b2bb-763c2a8c546f": "Employee Lookup View",
+      "2efed2ed-3b0f-453a-a67d-423f0779b7ce": "Active Employees",
+      "508288d1-2220-4615-ba4a-6af10d83b8f5": "Inactive Employees",
+      "e6d48e73-9ac3-4ea0-ad4c-d510fad56b22": "Employee Advanced Find View",
+      "fe205ac3-d449-4cc7-919c-ade0612800c7": "Employee Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (Employees)",
+    "Name": "cr552_employee_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Employees"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Employees",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Employees)",
+    "Name": "cr552_employee_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Employees"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Employees",
+    "Type": "OptionSetInfo"
+  }
+]

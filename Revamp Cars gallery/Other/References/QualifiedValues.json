@@ -1,0 +1,18 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_cr552_car_forms",
+      "Namespace": "Cars (Forms)",
+      "Values": {
+        "Information": "05bfbe41-0075-4bab-b056-fbdadb052752"
+      }
+    },
+    {
+      "Kind": "default.cds_cr552_employee_forms",
+      "Namespace": "Employees (Forms)",
+      "Values": {
+        "Information": "19bee0a2-49c2-42c3-81c4-fc1bf1b67734"
+      }
+    }
+  ]
+}
