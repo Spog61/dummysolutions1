@@ -1,0 +1,99 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr552_cars",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr552_car",
+    "Name": "Cars",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "cr552_car_Annotations": "Notes",
+      "cr552_car_AsyncOperations": "System Jobs",
+      "cr552_car_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr552_car_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr552_car_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr552_car_ProcessSession": "Process Sessions",
+      "cr552_car_SyncErrors": "Sync Errors",
+      "cr552_carid": "Car",
+      "cr552_carid1": "Car ID",
+      "cr552_carmodel": "Car Model",
+      "cr552_employee_cr552_car": "Employees",
+      "cr552_year": "Year",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Cars",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Cars (Views)",
+    "Name": "_cr552_car_views",
+    "RelatedEntityName": "Cars",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "3aa3e562-aa10-40cc-9181-1716d1c55d4c": "Inactive Cars",
+      "9386a204-61d4-4900-949a-7f791282e586": "Car Advanced Find View",
+      "a08150e9-999d-4ebb-bd57-5fba75137239": "Active Cars",
+      "aab36753-5042-4fff-94b2-8dc1c081d1af": "Car Lookup View",
+      "e62c1acf-0521-4485-9666-d271c6cca895": "Car Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (Cars)",
+    "Name": "cr552_car_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Cars"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Cars",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Cars)",
+    "Name": "cr552_car_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Cars"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Cars",
+    "Type": "OptionSetInfo"
+  }
+]
