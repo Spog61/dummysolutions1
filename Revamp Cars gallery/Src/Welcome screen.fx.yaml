@@ -34,7 +34,7 @@
             ZIndex: =2
 
             Header1 As Header:
-                BasePaletteColor: =Color.Azure
+                BasePaletteColor: =RGBA(168, 110, 235, 1)
                 DisplayMode: =DisplayMode.Edit
                 FontColor: =
                 Height: =75
@@ -143,7 +143,7 @@
 
                 Rectangle3 As rectangle:
                     BorderColor: =RGBA(0, 0, 0, 0)
-                    Fill: =RGBA(0, 120, 212, 1)
+                    Fill: =RGBA(247, 116, 38, 1)
                     Height: =48
                     OnSelect: =Select(Parent)
                     Visible: =ThisItem.IsSelected
