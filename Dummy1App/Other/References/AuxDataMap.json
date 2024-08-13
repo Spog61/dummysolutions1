@@ -1,0 +1,3 @@
+{
+  "AppFromDataMetaDataIdsToEntityNameMappings": "{\"%DataSourceName.AFD%\":\"Employees\",\"%DataSourceValue.AFD%\":\"[@Employees]\",\"%SortFieldName.AFD%\":\"\\\"cr552_department\\\"\",\"%FilterFieldName.AFD%\":\"cr552_department\",\"%PrimaryNameField.AFD%\":\"cr552_employeeid1\",\"%PrimaryNameFieldDisplayName.AFD%\":\"'Employee ID'\",\"%SearchFieldName.AFD%\":\"cr552_department,cr552_employeeid1,cr552_employeename\",\"%StartsWithFieldName.AFD%\":\"cr552_department\",\"%DeleteConfirmFieldName.AFD%\":\"cr552_department\",\"%SortDescending.AFD%\":\"SortDescending2\",\"%CopilotSinglePageScreen.ID%\":\"'Employees screen'\",\"%BrowseContainer.ID%\":\"BrowseGallery2\",\"%DetailEditContainer.ID%\":\"EditForm2\"}"
+}
