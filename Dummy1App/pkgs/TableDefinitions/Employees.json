@@ -2,7 +2,7 @@
   "DatasetName": "default.cds",
   "EntityName": "Employees",
   "environmentVariableName": "",
-  "InstanceUrl": "https://pactitdev.crm6.dynamics.com",
+  "InstanceUrl": "https://pactitdev.crm6.dynamics.com/",
   "LocalReferenceDSJson": {
     "entitySetName": "cr552_employees",
     "logicalName": "cr552_employee"
