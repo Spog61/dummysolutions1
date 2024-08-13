@@ -2,7 +2,7 @@
   "DatasetName": "default.cds",
   "EntityName": "Cars",
   "environmentVariableName": "",
-  "InstanceUrl": "https://pactitdev.crm6.dynamics.com",
+  "InstanceUrl": "https://pactitdev.crm6.dynamics.com/",
   "LocalReferenceDSJson": {
     "entitySetName": "cr552_cars",
     "logicalName": "cr552_car"
