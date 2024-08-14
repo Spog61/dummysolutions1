@@ -1,8 +1,6 @@
-popup_dialogue_1 As CanvasComponent:
+popup_dialogue_3 As CanvasComponent:
     BackgroundColour: =RGBA(109,49,162,1)
-    Button1_OnSelect: ="Text"
     Button1Text: ="Button 1"
-    Button2_OnSelect: ="Text"
     Button2Text: ="Button 2"
     ButtonColour: =RGBA(10, 175, 190, 1)
     ButtonTextColour: =RGBA(219, 207, 9, 1)
@@ -16,23 +14,23 @@ popup_dialogue_1 As CanvasComponent:
     Y: =0
     ZIndex: =1
 
-    grp_PopupDialogue_1 As group:
+    grp_PopupDialogue_3 As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =6
 
-        rct_DeleteAllpopup As rectangle:
+        rct_popup_1 As rectangle:
             BorderColor: =App.Theme.Colors.Darker40
-            Fill: =ColorFade(popup_dialogue_1.BackgroundColour,0.2)
+            Fill: =ColorFade(popup_dialogue_3.BackgroundColour,0.2)
             Height: =300
             Width: =400
             X: =115
             Y: =105
             ZIndex: =1
 
-        lbl_DeleteAllHeader As label:
+        lbl_Header_1 As label:
             Align: =Align.Center
             BorderColor: =App.Theme.Colors.Darker40
             Color: =RGBA(255, 255, 255, 1)
@@ -41,31 +39,31 @@ popup_dialogue_1 As CanvasComponent:
             Font: =App.Theme.Font
             Height: =70
             Size: =21
-            Text: =popup_dialogue_1.HeaderText
+            Text: =popup_dialogue_3.HeaderText
             Width: =400
             X: =115
             Y: =105
             ZIndex: =2
 
-        lbl_DeleteMessage As label:
+        lbl_Message_1 As label:
             Align: =Align.Center
-            BorderColor: =popup_dialogue_1.HeaderTextColour
+            BorderColor: =popup_dialogue_3.HeaderTextColour
             BorderThickness: =1   
-            Color: =popup_dialogue_1.HeaderTextColour
+            Color: =popup_dialogue_3.HeaderTextColour
             DisabledColor: =RGBA(166, 166, 166, 1)
             Fill: =RGBA(255,255,255,1)
             Font: =App.Theme.Font
             Height: =150
             Size: =21
             Text: |
-                =popup_dialogue_1.MessageText
+                =popup_dialogue_3.MessageText
             Width: =380
             X: =125
             Y: =188
             ZIndex: =3
 
-        btn_DeleteAll As Button:
-            BasePaletteColor: =popup_dialogue_1.ButtonColour
+        btn_Button1_2 As Button:
+            BasePaletteColor: =popup_dialogue_3.ButtonColour
             BorderColor: =
             BorderRadiusBottomLeft: =15
             BorderRadiusBottomRight: =15
@@ -74,17 +72,16 @@ popup_dialogue_1 As CanvasComponent:
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =2  
             DisplayMode: =DisplayMode.Edit
-            FontColor: =popup_dialogue_1.ButtonTextColour
+            FontColor: =popup_dialogue_3.ButtonTextColour
             Height: =32
-            OnSelect: =popup_dialogue_1.Button1_OnSelect
-            Text: =popup_dialogue_1.Button1Text
+            Text: =popup_dialogue_3.Button1Text
             Width: =96
             X: =160
             Y: =355
             ZIndex: =4
 
-        btn_DeleteAllCancel As Button:
-            BasePaletteColor: =popup_dialogue_1.ButtonColour
+        btn_Button1_3 As Button:
+            BasePaletteColor: =popup_dialogue_3.ButtonColour
             BorderColor: =
             BorderRadiusBottomLeft: =15
             BorderRadiusBottomRight: =15
@@ -93,10 +90,9 @@ popup_dialogue_1 As CanvasComponent:
             BorderStyle: =BorderStyle.Solid
             BorderThickness: =2  
             DisplayMode: =DisplayMode.Edit
-            FontColor: =popup_dialogue_1.ButtonTextColour
+            FontColor: =popup_dialogue_3.ButtonTextColour
             Height: =32
-            OnSelect: =popup_dialogue_1.Button2_OnSelect
-            Text: =popup_dialogue_1.Button2Text
+            Text: =popup_dialogue_3.Button2Text
             Width: =96
             X: =365
             Y: =355
