@@ -177,11 +177,12 @@
         Y: =665
         ZIndex: =2
 
-    pop_deleteAll As popup_dialogue:
-        Button1Text: ="Delete ALL"
+    popup_dialogue_2 As popup_dialogue_1:
+        Button1_OnSelect: |
+            ="SET(var_DeleteAllPopupVisible,false); ";
+        Button1Text: ="Delete All"
+        Button2_OnSelect: ="SET(var_DeleteAllPopupVisible,false); "
         Button2Text: ="Cancel"
-        HeaderText: ="Delete All Cars"
-        MessageText: ="Press the Delete All button to clear the Cars table."
         Visible: =var_DeleteAllPopupVisible
         ZIndex: =3
 
