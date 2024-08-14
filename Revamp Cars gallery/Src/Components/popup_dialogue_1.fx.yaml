@@ -1,0 +1,104 @@
+popup_dialogue_1 As CanvasComponent:
+    BackgroundColour: =RGBA(109,49,162,1)
+    Button1Text: ="Button 1"
+    Button2Text: ="Button 2"
+    ButtonColour: =RGBA(10, 175, 190, 1)
+    ButtonTextColour: =RGBA(219, 207, 9, 1)
+    Fill: =RGBA(0, 0, 0, 0)
+    HeaderText: ="header text"
+    HeaderTextColour: =RGBA(0, 0, 0, 1)
+    Height: =640
+    MessageText: ="message text"
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    grp_PopupDialogue_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =6
+
+        rct_DeleteAllpopup As rectangle:
+            BorderColor: =App.Theme.Colors.Darker40
+            Fill: =ColorFade(popup_dialogue_1.BackgroundColour,0.2)
+            Height: =300
+            Width: =400
+            X: =115
+            Y: =105
+            ZIndex: =1
+
+        lbl_DeleteAllHeader As label:
+            Align: =Align.Center
+            BorderColor: =App.Theme.Colors.Darker40
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(109, 49, 162, 1)
+            Font: =App.Theme.Font
+            Height: =70
+            Size: =21
+            Text: =popup_dialogue_1.HeaderText
+            Width: =400
+            X: =115
+            Y: =105
+            ZIndex: =2
+
+        lbl_DeleteMessage As label:
+            Align: =Align.Center
+            BorderColor: =popup_dialogue_1.HeaderTextColour
+            BorderThickness: =1   
+            Color: =popup_dialogue_1.HeaderTextColour
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255,255,255,1)
+            Font: =App.Theme.Font
+            Height: =150
+            Size: =21
+            Text: |
+                =popup_dialogue_1.MessageText
+            Width: =380
+            X: =125
+            Y: =188
+            ZIndex: =3
+
+        btn_DeleteAll As Button:
+            BasePaletteColor: =popup_dialogue_1.ButtonColour
+            BorderColor: =
+            BorderRadiusBottomLeft: =15
+            BorderRadiusBottomRight: =15
+            BorderRadiusTopLeft: =15
+            BorderRadiusTopRight: =15
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =2  
+            DisplayMode: =DisplayMode.Edit
+            FontColor: =popup_dialogue_1.ButtonTextColour
+            Height: =32
+            OnSelect: |-
+                =Set(var_DeleteAllPopupVisible,false);
+                Navigate(cars_CreateItem,ScreenTransition.None);
+            Text: =popup_dialogue_1.Button1Text
+            Width: =96
+            X: =160
+            Y: =355
+            ZIndex: =4
+
+        btn_DeleteAllCancel As Button:
+            BasePaletteColor: =popup_dialogue_1.ButtonColour
+            BorderColor: =
+            BorderRadiusBottomLeft: =15
+            BorderRadiusBottomRight: =15
+            BorderRadiusTopLeft: =15
+            BorderRadiusTopRight: =15
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =2  
+            DisplayMode: =DisplayMode.Edit
+            FontColor: =popup_dialogue_1.ButtonTextColour
+            Height: =32
+            OnSelect: =Set(var_DeleteAllPopupVisible,false);
+            Text: =popup_dialogue_1.Button2Text
+            Width: =96
+            X: =365
+            Y: =355
+            ZIndex: =5
+

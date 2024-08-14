@@ -1,5 +1,6 @@
 "'Welcome screen' As screen.'welcomeLayout_AFD_ver1.0'":
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+    OnVisible: =Set(var_DeleteAllPopupVisible,false);
 
     ScreenContainer3 As groupContainer.verticalAutoLayoutContainer:
         DropShadow: =DropShadow.Light
@@ -150,6 +151,37 @@
                     Width: =4
                     ZIndex: =6
 
-    popup_dialogue_1 As popup_dialogue:
+    btn_DeleteCarItem As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(161, 159, 157, 1)
+        DisabledFill: =RGBA(242, 242, 241, 0)
+        Fill: =RGBA(0, 120, 212, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(16, 110, 190, 1)
+        OnSelect: =Set(var_DeleteAllPopupVisible,true);
+        PressedBorderColor: =RGBA(0, 69, 120, 1)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(16, 110, 190, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Text: ="Delete All Cars"
+        X: =1135
+        Y: =665
         ZIndex: =2
+
+    pop_deleteAll As popup_dialogue:
+        Button1Text: ="Delete ALL"
+        Button2Text: ="Cancel"
+        HeaderText: ="Delete All Cars"
+        MessageText: ="Press the Delete All button to clear the Cars table."
+        Visible: =var_DeleteAllPopupVisible
+        ZIndex: =3
 
