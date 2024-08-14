@@ -115,7 +115,7 @@
     "DocumentType": "App",
     "EnableInstrumentation": false,
     "FileID": "28d84cdc-89e2-40b4-8050-08d37e7704b8",
-    "Id": "28d84cdc-89e2-40b4-8050-08d37e7704b8",
+    "Id": "e87facdc-45d0-4fce-8015-452f308c662e",
     "InstrumentationKey": "",
     "ManualOfflineProfileId": "",
     "Name": "Dummy1App",
@@ -137,6 +137,7 @@
   "ScreenOrder": [
     "Cars screen",
     "Employees screen",
-    "Welcome screen"
+    "Welcome screen",
+    "cars_CreateItem"
   ]
 }

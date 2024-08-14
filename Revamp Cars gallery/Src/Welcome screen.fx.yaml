@@ -4,7 +4,7 @@
     ScreenContainer3 As groupContainer.verticalAutoLayoutContainer:
         DropShadow: =DropShadow.Light
         Fill: =RGBA(245, 245, 245, 1)
-        Height: =Parent.Height
+        Height: =Parent.Height-150
         LayoutDirection: =LayoutDirection.Vertical
         LayoutGap: =16
         LayoutMode: =LayoutMode.Auto
@@ -19,7 +19,7 @@
         Width: =Parent.Width
         ZIndex: =1
 
-        HeaderContainer1 As groupContainer.horizontalAutoLayoutContainer:
+        con_header As groupContainer.horizontalAutoLayoutContainer:
             DropShadow: =DropShadow.Light
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
@@ -50,7 +50,7 @@
                 Y: =0
                 ZIndex: =3
 
-        MainContainer3 As groupContainer.horizontalAutoLayoutContainer:
+        con_data As groupContainer.horizontalAutoLayoutContainer:
             Fill: =RGBA(245, 245, 245, 1)
             LayoutAlignItems: =LayoutAlignItems.Stretch
             LayoutGap: =16
@@ -149,4 +149,7 @@
                     Visible: =ThisItem.IsSelected
                     Width: =4
                     ZIndex: =6
+
+    popup_dialogue_1 As popup_dialogue:
+        ZIndex: =2
 

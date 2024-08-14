@@ -6,6 +6,7 @@
     "IsSampleData": false,
     "IsWritable": true,
     "LogicalName": "cr552_car",
+    "MaxGetRowsCount": 500,
     "Name": "Cars",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",

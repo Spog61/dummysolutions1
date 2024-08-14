@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 1,
+    "LibraryId": "317cacc9-f52c-4b00-ba1a-42693f98178b",
+    "LibraryLogicalName": "cr552_pactitdevcomponentlibrary_23043",
+    "LibraryVersion": "2024-08-04T05:42:39Z",
+    "OriginalComponentDefinitionTemplateId": "0bd47b61b3a24cb0886ad0226516955d",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2024-08-04T05:42:43.869+00:00"
+  }
+]
