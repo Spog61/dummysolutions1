@@ -8,6 +8,7 @@ cars_CreateItem As screen:
         BorderStyle: =BorderStyle.Solid
         BorderThickness: =2
         DisplayMode: =DisplayMode.Edit
+        Fill: =
         FontColor: =RGBA(109, 49, 162, 1)
         Height: =169
         Size: =34
