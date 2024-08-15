@@ -32,7 +32,7 @@
             TableNameLabel2 As label:
                 AlignInContainer: =AlignInContainer.Stretch
                 Color: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(0, 120, 212, 1)
+                Fill: =var_PrimaryColour
                 FillPortions: =1
                 FontWeight: =FontWeight.Semibold
                 Height: =68
@@ -46,7 +46,7 @@
 
             HomeIconButton2 As icon:
                 Color: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(0, 120, 212, 1)
+                Fill: =var_PrimaryColour
                 Height: =68
                 Icon: =Icon.Home
                 OnSelect: =Back()
@@ -61,7 +61,7 @@
                 AccessibleLabel: ="Offline sync status icon"
                 AlignInContainer: =AlignInContainer.Stretch
                 Color: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(0, 120, 212, 1)
+                Fill: =var_PrimaryColour
                 Icon: |-
                     =Switch(Connection.Sync,
                        ConnectionSync.Connected, Icon.Globe, 

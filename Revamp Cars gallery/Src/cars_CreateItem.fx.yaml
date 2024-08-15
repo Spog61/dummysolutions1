@@ -1,12 +1,12 @@
 cars_CreateItem As screen:
-    Fill: =RGBA(174, 208, 221, 1)
+    Fill: =var_PrimaryColour
     LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
 
     TextCanvas1 As Text:
         Align: ='TextCanvas.Align'.Center
         BorderColor: =Color.Beige
         BorderStyle: =BorderStyle.Solid
-        BorderThickness: =2
+        BorderThickness: =0
         DisplayMode: =DisplayMode.Edit
         Fill: =
         FontColor: =RGBA(109, 49, 162, 1)
@@ -22,11 +22,11 @@ cars_CreateItem As screen:
     btn_back As button:
         BorderColor: =RGBA(0, 0, 0, 0)
         BorderStyle: =BorderStyle.None
-        Color: =RGBA(255, 191, 0, 1)
+        Color: =Color.Beige
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
         DisabledColor: =RGBA(161, 159, 157, 1)
         DisabledFill: =RGBA(242, 242, 241, 0)
-        Fill: =RGBA(109, 49, 162, 1)
+        Fill: =var_SecondaryColour
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
         HoverBorderColor: =RGBA(0, 0, 0, 0)

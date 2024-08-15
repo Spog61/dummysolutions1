@@ -1,0 +1,47 @@
+"scn_MainMenu As screen.'autoLayout_HeaderFooter_ver1.0'":
+    Fill: =var_PrimaryColour
+    LoadingSpinnerColor: =RGBA(0, 120, 212, 1)
+    OnVisible: =
+
+    txt_headerMainMenu As Text:
+        Align: ='TextCanvas.Align'.Center
+        DisplayMode: =DisplayMode.Edit
+        Font: =Font.Verdana
+        FontColor: =var_SecondaryColour
+        Height: =104
+        Size: =34
+        Text: ="Employee Fleet Management"
+        Width: =1366
+        X: =0
+        Y: =0
+        ZIndex: =1
+
+    btn_Cars As Button:
+        BasePaletteColor: =var_SecondaryColour
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =Color.Beige
+        FontSize: =28
+        Height: =60
+        OnSelect: =Navigate('Cars screen',ScreenTransition.Fade)
+        Text: ="Cars"
+        Width: =200
+        X: =583
+        Y: =187
+        ZIndex: =2
+
+    btn_Employees As Button:
+        BasePaletteColor: =var_SecondaryColour
+        BorderColor: =
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =Color.Beige
+        FontSize: =28
+        Height: =60
+        OnSelect: |-
+            =
+            Navigate('Employees screen',ScreenTransition.Fade)
+        Text: ="Employees"
+        Width: =200
+        X: =583
+        Y: =293
+        ZIndex: =3
+

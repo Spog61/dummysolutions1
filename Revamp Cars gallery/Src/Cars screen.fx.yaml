@@ -32,7 +32,7 @@
             TableNameLabel1 As label:
                 AlignInContainer: =AlignInContainer.Stretch
                 Color: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(0, 120, 212, 1)
+                Fill: =var_PrimaryColour
                 FillPortions: =1
                 FontWeight: =FontWeight.Semibold
                 Height: =68
@@ -46,7 +46,7 @@
 
             HomeIconButton1 As icon:
                 Color: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(0, 120, 212, 1)
+                Fill: =var_PrimaryColour
                 Height: =68
                 Icon: =Icon.Home
                 OnSelect: =Back()
@@ -61,7 +61,7 @@
                 AccessibleLabel: ="Offline sync status icon"
                 AlignInContainer: =AlignInContainer.Stretch
                 Color: =RGBA(255, 255, 255, 1)
-                Fill: =RGBA(0, 120, 212, 1)
+                Fill: =var_PrimaryColour
                 Icon: |-
                     =Switch(Connection.Sync,
                        ConnectionSync.Connected, Icon.Globe, 
@@ -84,6 +84,7 @@
                 ZIndex: =30
 
         BodyContainer1 As groupContainer.horizontalAutoLayoutContainer:
+            Height: =100
             LayoutGap: =16
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -170,7 +171,7 @@
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Add
                         OnSelect: |-
-                            =NewForm(Form1); UpdateContext({ newMode: true });
+                            =NewForm(frm_CarDetails); UpdateContext({ newMode: true });
                         PaddingBottom: =10
                         PaddingLeft: =10
                         PaddingRight: =10
@@ -399,7 +400,7 @@
                         HoverColor: =RGBA(16, 110, 190, 1)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Check
-                        OnSelect: =SubmitForm(Form1)
+                        OnSelect: =SubmitForm(frm_CarDetails)
                         PaddingBottom: =12
                         PaddingLeft: =12
                         PaddingRight: =12
@@ -425,7 +426,7 @@
                         HoverFill: =RGBA(0, 0, 0, 0)
                         Icon: =Icon.Cancel
                         OnSelect: |-
-                            =ResetForm(Form1); UpdateContext({ editMode: false, newMode: false });
+                            =ResetForm(frm_CarDetails); UpdateContext({ editMode: false, newMode: false });
                         PaddingBottom: =12
                         PaddingLeft: =12
                         PaddingRight: =12
@@ -491,10 +492,11 @@
                         ZIndex: =22
 
                 MainContainer1 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Start
                     DropShadow: =DropShadow.Light
-                    Fill: =RGBA(255, 255, 255, 1)
+                    Fill: =Color.Beige
                     LayoutDirection: =LayoutDirection.Vertical
-                    LayoutMinHeight: =100
+                    LayoutMinHeight: =400
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     RadiusBottomLeft: =4
@@ -503,32 +505,36 @@
                     RadiusTopRight: =4
                     ZIndex: =23
 
-                    Form1 As form:
-                        BorderColor: =RGBA(245, 245, 245, 1)
+                    frm_CarDetails As form:
+                        AlignInContainer: =AlignInContainer.Start
+                        BorderColor: =var_SecondaryColour
                         DataSource: =[@Cars]
                         DefaultMode: =If(newMode, FormMode.New, editMode, FormMode.Edit, FormMode.View)
+                        Fill: =var_PrimaryColour
+                        Height: =400
                         Item: =RecordsGallery1.Selected
-                        LayoutMinHeight: =250
+                        LayoutMinHeight: =300
                         LayoutMinWidth: =300
-                        NumberOfColumns: =2
+                        NumberOfColumns: =1
                         OnFailure: =Notify("Cannot save. Please check if there are errors in the form.", NotificationType.Error)
                         OnSuccess: |-
                             =UpdateContext({ CurrentItem: Self.LastSubmit, editMode: false, newMode: false })
+                        Width: =500
                         ZIndex: =24
 
-                        "'Car ID_DataCard1' As typedDataCard.textualEditCard":
+                        dc_CarID As typedDataCard.textualEditCard:
                             BorderColor: =RGBA(245, 245, 245, 1)
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="cr552_carid1"
                             Default: =ThisItem.'Car ID'
                             DisplayMode: =Parent.DisplayMode
                             DisplayName: =DataSourceInfo([@Cars],DataSourceInfo.DisplayName,cr552_carid1)
-                            Fill: =RGBA(0, 0, 0, 0)
-                            Height: =50
+                            Fill: =var_PrimaryColour
+                            Height: =100
                             MaxLength: =DataSourceInfo([@Cars], DataSourceInfo.MaxLength, cr552_carid1)
                             Required: =true
                             Update: =DataCardValue1.Text
-                            Width: =458
+                            Width: =400 
                             X: =0
                             Y: =0
                             ZIndex: =1
@@ -564,6 +570,7 @@
                                 DisabledColor: =RGBA(161, 159, 157, 1)
                                 DisabledFill: =RGBA(242, 242, 241, 0)
                                 DisplayMode: =Parent.DisplayMode
+                                Fill: =Color.Beige
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
                                 HoverBorderColor: =RGBA(16, 110, 190, 1)
@@ -631,7 +638,7 @@
                                 Y: =DataCardKey1.Y
                                 ZIndex: =4
 
-                        "'Car Model_DataCard1' As typedDataCard.textualEditCard":
+                        dc_CarModel As typedDataCard.textualEditCard:
                             BorderColor: =RGBA(245, 245, 245, 1)
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="cr552_carmodel"
@@ -643,9 +650,9 @@
                             MaxLength: =DataSourceInfo([@Cars], DataSourceInfo.MaxLength, cr552_carmodel)
                             Required: =false
                             Update: =DataCardValue2.Text
-                            Width: =458
-                            X: =1
-                            Y: =0
+                            Width: =400 
+                            X: =0
+                            Y: =1
                             ZIndex: =1
 
                             DataCardKey2 As label:
@@ -679,6 +686,7 @@
                                 DisabledColor: =RGBA(161, 159, 157, 1)
                                 DisabledFill: =RGBA(242, 242, 241, 0)
                                 DisplayMode: =Parent.DisplayMode
+                                Fill: =Color.Beige
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
                                 HoverBorderColor: =RGBA(16, 110, 190, 1)
@@ -746,20 +754,20 @@
                                 Y: =DataCardKey2.Y
                                 ZIndex: =4
 
-                        Year_DataCard1 As typedDataCard.numberEditCard:
+                        dc_CarYear As typedDataCard.numberEditCard:
                             BorderColor: =RGBA(245, 245, 245, 1)
                             BorderStyle: =BorderStyle.Solid
                             DataField: ="cr552_year"
                             Default: =ThisItem.Year
                             DisplayMode: =Parent.DisplayMode
                             DisplayName: =DataSourceInfo([@Cars],DataSourceInfo.DisplayName,cr552_year)
-                            Fill: =RGBA(0, 0, 0, 0)
+                            Fill: =var_PrimaryColour
                             Height: =50
                             Required: =false
                             Update: =Value(DataCardValue3.Text)
-                            Width: =458
+                            Width: =400 
                             X: =0
-                            Y: =1
+                            Y: =2
                             ZIndex: =1
 
                             DataCardKey3 As label:
@@ -793,6 +801,7 @@
                                 DisabledColor: =RGBA(161, 159, 157, 1)
                                 DisabledFill: =RGBA(242, 242, 241, 0)
                                 DisplayMode: =Parent.DisplayMode
+                                Fill: =Color.Beige
                                 FocusedBorderThickness: =4
                                 Font: =Font.'Segoe UI'
                                 Format: =TextFormat.Number
@@ -953,4 +962,27 @@
                         Size: =15
                         Text: ="Delete"
                         ZIndex: =29
+
+        btn_cs_Back As Button:
+            Align: =Align.Center
+            BasePaletteColor: =var_SecondaryColour
+            BorderColor: =var_SecondaryColour
+            BorderRadiusBottomLeft: =12
+            BorderRadiusBottomRight: =12
+            BorderRadiusTopLeft: =12
+            BorderRadiusTopRight: =12
+            BorderStyle: =BorderStyle.Solid
+            BorderThickness: =2   
+            DisplayMode: =DisplayMode.Edit
+            FontColor: =Color.Beige
+            Height: =32
+            LayoutMinHeight: =32
+            LayoutMinWidth: =96
+            OnSelect: |
+                =Navigate(scn_MainMenu,ScreenTransition.Fade)
+            Text: ="Back"
+            Width: =96
+            X: =0
+            Y: =0
+            ZIndex: =6
 

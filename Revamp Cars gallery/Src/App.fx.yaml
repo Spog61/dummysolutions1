@@ -1,5 +1,8 @@
 App As appinfo:
     BackEnabled: =true
+    OnStart: |-
+        =Set(var_PrimaryColour,Color.Aquamarine);
+        Set(var_SecondaryColour,Color.BlueViolet);
     StartScreen: ='Welcome screen'
     Theme: =PowerAppsTheme
 
