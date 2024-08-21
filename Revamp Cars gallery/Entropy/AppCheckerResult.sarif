@@ -54,6 +54,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "popup_dialogue_1.btn_DeleteAll.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "popup_dialogue_1.btn_DeleteAll.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "popup_dialogue_1",
+                "type": "popup_dialogue_1.btn_DeleteAll"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "popup_dialogue_1.btn_DeleteAllCancel.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "popup_dialogue_1.btn_DeleteAllCancel.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "popup_dialogue_1",
+                "type": "popup_dialogue_1.btn_DeleteAllCancel"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "popup_dialogue.btn_Button1.AccessibleLabel"
                 }
               ],
@@ -114,19 +174,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "popup_dialogue_1.btn_DeleteAll.AccessibleLabel"
+                  "fullyQualifiedName": "scn_MainMenu.btn_Cars.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "popup_dialogue_1.btn_DeleteAll.AccessibleLabel",
+                  "fullyQualifiedName": "scn_MainMenu.btn_Cars.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "popup_dialogue_1",
-                "type": "popup_dialogue_1.btn_DeleteAll"
+                "module": "scn_MainMenu",
+                "type": "scn_MainMenu.btn_Cars"
               }
             }
           ],
@@ -144,19 +204,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "popup_dialogue_1.btn_DeleteAllCancel.AccessibleLabel"
+                  "fullyQualifiedName": "scn_MainMenu.btn_Employees.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "popup_dialogue_1.btn_DeleteAllCancel.AccessibleLabel",
+                  "fullyQualifiedName": "scn_MainMenu.btn_Employees.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "popup_dialogue_1",
-                "type": "popup_dialogue_1.btn_DeleteAllCancel"
+                "module": "scn_MainMenu",
+                "type": "scn_MainMenu.btn_Employees"
               }
             }
           ],
@@ -1057,66 +1117,6 @@
                 "member": "AccessibleLabel",
                 "module": "Employees screen",
                 "type": "'Employees screen'.ScreenContainer2.BodyContainer2.RightContainer2.MainContainer2.Form2.'Car ID_DataCard2'.DataCardValue7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scn_MainMenu.btn_Cars.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scn_MainMenu.btn_Cars.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "scn_MainMenu",
-                "type": "scn_MainMenu.btn_Cars"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "scn_MainMenu.btn_Employees.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "scn_MainMenu.btn_Employees.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "scn_MainMenu",
-                "type": "scn_MainMenu.btn_Employees"
               }
             }
           ],

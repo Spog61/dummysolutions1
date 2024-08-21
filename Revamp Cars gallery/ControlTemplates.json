@@ -224,7 +224,7 @@
     "Name": "PowerApps_CoreControls_TextCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Text",
-    "Version": "0.0.39"
+    "Version": "0.0.40"
   },
   "typedDataCard": {
     "CustomGroupControlTemplateName": "",
